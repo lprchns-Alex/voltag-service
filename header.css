@@ -16,18 +16,20 @@
 .header .mobile-nav{top:calc(100% + 4px);right:40px;border:1px solid #edf0f2;border-radius:16px;padding:12px;background:#fff}
 .header .mobile-nav a{padding:13px 15px;border:0;border-radius:6px}
 .header .mobile-nav a:hover{background:#f5f6f7}
-@media(max-width:1200px){.header .header-inner{gap:24px}.header .desktop-nav{gap:22px}.header .phone{display:none}}
-@media(min-width:861px){.header .mobile-nav{display:none!important}}
-@media(max-width:860px){.header .header-inner{height:84px;display:flex;justify-content:space-between;gap:18px}.header .desktop-nav{display:none}.header .original-logo{width:66px;height:64px}.header .menu-toggle{display:flex}.header .mobile-nav:not([hidden]){display:block!important}.header .header-actions{gap:12px}}
+@media(max-width:1350px){.header .header-inner{gap:24px}.header .desktop-nav{gap:20px;font-size:13px}.header .brand{width:80px}.header .header-actions{gap:18px}}
+@media(min-width:1101px){.header .mobile-nav{display:none!important}}
+@media(max-width:1100px){.header .header-inner{height:84px;display:flex;justify-content:space-between;gap:18px}.header .desktop-nav{display:none}.header .original-logo{width:66px;height:64px}.header .menu-toggle{display:flex}.header .mobile-nav:not([hidden]){display:block!important}.header .header-actions{gap:12px}}
 @media(max-width:480px){.header{margin-bottom:10px}.header .header-inner{height:78px;gap:12px}.header .brand{width:65px}.header .original-logo{width:61px;height:59px}.header .header-actions{gap:9px}.header .header-book{height:42px;min-height:42px;padding:0 21px;font-size:12px}.header .mobile-nav{left:16px;right:16px;width:auto}}
 @media(prefers-reduced-motion:reduce){.header .desktop-nav a,.header .header-book{transition:none}}
 
-.header-contact{display:flex;flex-direction:column;align-items:center;gap:3px}
-.messengers{display:flex;align-items:center;justify-content:center;gap:8px}
-.messenger-icon{display:grid;place-items:center;width:30px;height:30px;padding:4px;border:0;background:transparent;border-radius:50%;color:#111;cursor:default;transition:background .2s}
-.messenger-icon svg{width:22px;height:22px;fill:currentColor}
-.messenger-icon:disabled{opacity:1;color:#111}
-.messenger-icon:focus-visible{outline:2px solid #24313f;outline-offset:2px}
-.mobile-messengers{justify-content:flex-start;padding:4px 11px 8px}
-@media(max-width:1000px){.header .desktop-nav{gap:14px;font-size:13px}.header .header-inner{gap:16px}}
-@media(max-width:860px){.header-contact{display:none}}
+/* Contact marks use filled silhouettes, isolated from the site's outlined SVGs. */
+.header-contact{display:flex;align-items:center;gap:18px;flex-shrink:0}
+.messengers{display:flex;align-items:center;justify-content:center;gap:12px;background:none}
+.messenger-icon{display:flex;align-items:center;justify-content:center;width:24px;height:24px;padding:0;border:0;border-radius:0;background:none;box-shadow:none;color:#000;line-height:1;flex-shrink:0}
+.messenger-icon svg{display:block;width:24px;height:24px;fill:currentColor;stroke:none;stroke-width:0;filter:none;overflow:visible}
+.mobile-contact{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:8px;padding:12px 8px 8px}
+.header .mobile-contact>a{padding:0;font-size:12px;white-space:nowrap}
+.mobile-messengers{gap:8px}
+.mobile-messengers .messenger-icon,.mobile-messengers svg{width:20px;height:20px}
+@media(min-width:721px) and (max-width:1100px){.header .mobile-nav{width:350px}}
+@media(max-width:720px){.header-contact{display:none}}
