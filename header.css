@@ -1,29 +1,23 @@
-/* Compact tile navigation inspired by the reference, in Voltag's blue palette. */
+/* Classic white sticky header with a quiet, unboxed navigation. */
 .header{background:#fff;margin-bottom:14px;border:0}
-.header.is-scrolled{box-shadow:0 5px 24px #29364508}
-.header .header-inner{height:106px;display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:28px;border:0}
+.header.is-scrolled{box-shadow:0 3px 20px #29364508}
+.header .header-inner{height:96px;display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:32px;border:0}
 .header .brand{gap:0;padding:0;width:100px;justify-content:flex-start}
-.header .original-logo{width:78px;height:76px;object-fit:contain}
+.header .original-logo{width:74px;height:72px;object-fit:contain}
 .header .brand-specialty{display:none}
-.header .desktop-nav{display:flex;justify-self:center;gap:5px;padding:5px;border-radius:9px;background:#fff;box-shadow:0 0 0 1px #eef0f1;font-size:12px;font-weight:500;white-space:nowrap}
-.header .desktop-nav a{display:flex;align-items:center;justify-content:center;min-height:45px;padding:0 20px;border:0;border-radius:5px;background:#f1f2f3;transition:background .25s,color .25s}
-.header .desktop-nav a:hover{background:#e4e9ed;text-decoration:none}
-.header .desktop-nav a[aria-current="location"]{background:#24313f;color:#fff}
-.header .header-actions{gap:9px}
-.header .phone{display:grid;place-items:center;width:55px;height:55px;background:#f1f2f3;border:5px solid #fff;border-radius:9px;box-shadow:0 0 0 1px #eef0f1;transition:background .25s}
-.header .phone svg{width:19px;height:19px}
-.header .phone:hover{background:#e4e9ed}
-.header .header-book{display:flex;gap:17px;height:55px;min-height:55px;padding:5px;border:0;border-radius:9px;background:#24313f;color:#fff;font-size:12px;font-weight:600;line-height:1;text-transform:uppercase;white-space:nowrap}
-.header .header-book:hover{background:#354757;transform:none}
-.booking-avatar{display:block;width:43px;height:45px;flex-shrink:0;border-radius:5px;background:#405363 url('assets/gallery/bmw.jpg') 80% 10% / 300% auto no-repeat}
-.booking-plus{display:grid;place-items:center;width:45px;height:45px;flex-shrink:0;border-radius:5px;background:#008fc9;color:#fff;font-size:34px;font-weight:300;line-height:1;transition:background .25s}
-.header-book:hover .booking-plus{background:#00a2e2}
-.header .menu-toggle{display:none;width:48px;height:48px;padding:15px;border:0;border-radius:7px;background:#f1f2f3}
-.header .mobile-nav{top:calc(100% + 4px);right:40px;border:1px solid #edf0f2;border-radius:12px;padding:12px;background:#fff}
+.header .desktop-nav{display:flex;justify-self:center;align-items:center;gap:28px;padding:0;border:0;background:none;box-shadow:none;font-size:14px;font-weight:500;white-space:nowrap}
+.header .desktop-nav a{display:flex;align-items:center;min-height:44px;padding:0;border:0;background:none;color:#64717c;transition:color .2s}
+.header .desktop-nav a:hover,.header .desktop-nav a[aria-current="location"]{color:#24313f;text-decoration:none}
+.header .header-actions{gap:22px}
+.header .phone{display:block;font-size:13px;font-weight:500;white-space:nowrap;color:#24313f}
+.header .header-book{height:46px;min-height:46px;padding:0 26px;border:0;border-radius:999px;background:#24313f;color:#fff;font-size:14px;font-weight:500;line-height:1;white-space:nowrap;transition:background .2s}
+.header .header-book:hover{background:#405363;transform:none}
+.header .menu-toggle{display:none;width:44px;height:44px;padding:13px;border:1px solid #e8ecef;border-radius:50%;background:#fff}
+.header .mobile-nav{top:calc(100% + 4px);right:40px;border:1px solid #edf0f2;border-radius:16px;padding:12px;background:#fff}
 .header .mobile-nav a{padding:13px 15px;border:0;border-radius:6px}
-.header .mobile-nav a:hover{background:#f1f2f3}
-@media(max-width:1200px){.header .header-inner{gap:18px}.header .brand{width:82px}.header .desktop-nav a{padding-inline:14px}.header .header-book{gap:12px}.header .phone{display:none}}
+.header .mobile-nav a:hover{background:#f5f6f7}
+@media(max-width:1200px){.header .header-inner{gap:24px}.header .desktop-nav{gap:22px}.header .phone{display:none}}
 @media(min-width:861px){.header .mobile-nav{display:none!important}}
-@media(max-width:860px){.header .header-inner{height:88px;display:flex;justify-content:space-between;gap:18px}.header .desktop-nav{display:none}.header .original-logo{width:68px;height:65px}.header .menu-toggle{display:flex}.header .mobile-nav:not([hidden]){display:block!important}.header .header-book{height:48px;min-height:48px}.booking-avatar{width:36px;height:38px}.booking-plus{width:38px;height:38px;font-size:29px}}
-@media(max-width:480px){.header{margin-bottom:10px}.header .header-inner{height:82px;gap:12px}.header .brand{width:65px}.header .original-logo{width:63px;height:60px}.header .header-actions{gap:7px}.header .header-book{gap:12px;font-size:10px}.booking-avatar{display:none}.header .header-book>span:nth-child(2){padding-left:10px}.header .mobile-nav{left:16px;right:16px;width:auto}}
-@media(prefers-reduced-motion:reduce){.header .desktop-nav a,.header .phone,.booking-plus{transition:none}}
+@media(max-width:860px){.header .header-inner{height:84px;display:flex;justify-content:space-between;gap:18px}.header .desktop-nav{display:none}.header .original-logo{width:66px;height:64px}.header .menu-toggle{display:flex}.header .mobile-nav:not([hidden]){display:block!important}.header .header-actions{gap:12px}}
+@media(max-width:480px){.header{margin-bottom:10px}.header .header-inner{height:78px;gap:12px}.header .brand{width:65px}.header .original-logo{width:61px;height:59px}.header .header-actions{gap:9px}.header .header-book{height:42px;min-height:42px;padding:0 21px;font-size:12px}.header .mobile-nav{left:16px;right:16px;width:auto}}
+@media(prefers-reduced-motion:reduce){.header .desktop-nav a,.header .header-book{transition:none}}
