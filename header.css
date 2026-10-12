@@ -1,0 +1,25 @@
+/* A single architectural strip with full-height, softly divided cells. */
+.header{margin-bottom:20px;border-bottom:1px solid #dce1e5}
+.header.is-scrolled{box-shadow:0 5px 20px #29364505}
+.header .header-inner{height:80px;gap:0;justify-content:flex-start;border-inline:1px solid #dce1e5}
+.header .brand{align-self:stretch;justify-content:center;width:146px;padding:8px 25px;border-right:1px solid #dce1e5}
+.header .original-logo{width:65px;height:60px;object-fit:contain}
+.header .brand-specialty{display:none}
+.header .desktop-nav{align-self:stretch;align-items:stretch;flex:1;justify-content:flex-start;gap:0;font-size:12px;font-weight:500;letter-spacing:.035em;text-transform:uppercase}
+.header .desktop-nav a{display:flex;align-items:center;justify-content:center;padding:0 23px;border-right:1px solid transparent;transition:background .25s,border-color .25s}
+.header .desktop-nav a:first-child{border-right-color:#dce1e5}
+.header .desktop-nav a:hover{background:#f2f4f5;border-right-color:#dce1e5;text-decoration:none}
+.header .header-actions{align-self:stretch;gap:0}
+.header .phone{display:flex;align-self:stretch;align-items:center;justify-content:center;min-width:184px;padding:0 22px;border-left:1px solid #dce1e5;font-size:12px;white-space:nowrap;transition:background .25s}
+.header .phone:hover{background:#f2f4f5}
+.header .header-actions .button{height:100%;min-height:0;min-width:168px;border:0;border-left:1px solid #dce1e5;border-radius:0;padding:0 26px;background:#fff;color:var(--ink);font-size:12px;font-weight:500;letter-spacing:.045em;text-transform:uppercase;transition:background .25s,color .25s}
+.header .header-actions .button:hover{background:var(--ink);color:#fff;transform:none}
+.header .menu-toggle{height:100%;width:70px;flex-shrink:0;border:0;border-left:1px solid #dce1e5;border-radius:0;padding:0 24px;background:#fff}
+.header .mobile-nav{top:calc(100% + 9px);right:40px;border-color:#dce1e5;border-radius:14px}
+.header a:focus-visible,.header button:focus-visible{outline-offset:-5px}
+@media(max-width:1200px){.header .brand{width:120px;padding-inline:20px}.header .desktop-nav a{padding-inline:18px}.header .phone{min-width:168px;padding-inline:16px}.header .header-actions .button{min-width:146px;padding-inline:20px}}
+@media(max-width:1060px){.header .phone{display:none}.header .desktop-nav{justify-content:center}.header .desktop-nav a{padding-inline:21px}}
+@media(min-width:861px){.header .menu-toggle{display:none}.header .mobile-nav{display:none!important}}
+@media(max-width:860px){.header .header-inner{justify-content:space-between;height:74px}.header .desktop-nav{display:none}.header .menu-toggle{display:flex}.header .mobile-nav:not([hidden]){display:block!important}.header .original-logo{width:61px;height:56px}}
+@media(max-width:480px){.header{margin-bottom:16px}.header .header-inner{height:72px}.header .brand{width:96px;padding:8px 18px}.header .original-logo{width:59px;height:54px}.header .header-actions .button{min-width:122px;padding-inline:16px;font-size:10px}.header .menu-toggle{width:56px;padding-inline:17px}.header .mobile-nav{left:16px;right:16px;width:auto}}
+@media(prefers-reduced-motion:reduce){.header .desktop-nav a,.header .phone,.header .header-actions .button{transition:none}}
