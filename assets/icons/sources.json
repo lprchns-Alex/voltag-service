@@ -1,0 +1,18 @@
+{
+  "max": {
+    "source": "https://go.max.ru/brandbook",
+    "download": "https://st.max.ru/brandbook/max-dark.zip",
+    "adaptation": "Original silhouette path extracted from the luminance mask. Geometry unchanged."
+  },
+  "telegram": {
+    "source": "https://telegram.org/tour/screenshots",
+    "download": "https://telegram.org/file/464001088/1/bI7AJLo7oX4.287931.zip/374fe3b0a59dc60005",
+    "adaptation": "Original paper-plane path. Blue circular background omitted, black fill, cropped viewBox. Geometry unchanged."
+  },
+  "whatsapp": {
+    "source": "https://github.com/simple-icons/simple-icons/blob/develop/icons/whatsapp.svg",
+    "download": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/whatsapp.svg",
+    "license": "CC0-1.0 (Simple Icons); brand rights remain with the owner.",
+    "adaptation": "Original path with explicit black fill. Geometry unchanged."
+  }
+}

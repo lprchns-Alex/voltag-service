@@ -22,14 +22,16 @@
 @media(max-width:480px){.header{margin-bottom:10px}.header .header-inner{height:78px;gap:12px}.header .brand{width:65px}.header .original-logo{width:61px;height:59px}.header .header-actions{gap:9px}.header .header-book{height:42px;min-height:42px;padding:0 21px;font-size:12px}.header .mobile-nav{left:16px;right:16px;width:auto}}
 @media(prefers-reduced-motion:reduce){.header .desktop-nav a,.header .header-book{transition:none}}
 
-/* Contact marks use filled silhouettes, isolated from the site's outlined SVGs. */
+/* Original vector brand marks are external images, isolated from global SVG styles. */
 .header-contact{display:flex;align-items:center;gap:18px;flex-shrink:0}
 .messengers{display:flex;align-items:center;justify-content:center;gap:12px;background:none}
 .messenger-icon{display:flex;align-items:center;justify-content:center;width:24px;height:24px;padding:0;border:0;border-radius:0;background:none;box-shadow:none;color:#000;line-height:1;flex-shrink:0}
-.messenger-icon svg{display:block;width:24px;height:24px;fill:currentColor;stroke:none;stroke-width:0;filter:none;overflow:visible}
+.messenger-icon img{display:block;width:24px;height:24px;object-fit:contain;filter:none}
+.messenger-icon[data-messenger="max"] img{width:22px;height:22px}
 .mobile-contact{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:8px;padding:12px 8px 8px}
 .header .mobile-contact>a{padding:0;font-size:12px;white-space:nowrap}
 .mobile-messengers{gap:8px}
-.mobile-messengers .messenger-icon,.mobile-messengers svg{width:20px;height:20px}
+.mobile-messengers .messenger-icon,.mobile-messengers .messenger-icon img{width:22px;height:22px}
+.mobile-messengers .messenger-icon[data-messenger="max"] img{width:20px;height:20px}
 @media(min-width:721px) and (max-width:1100px){.header .mobile-nav{width:350px}}
 @media(max-width:720px){.header-contact{display:none}}
