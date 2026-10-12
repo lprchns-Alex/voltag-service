@@ -26,3 +26,7 @@ The booking form is a demo: it does not send or store submissions. A backend int
 Service and equipment images are generated promotional illustrations. They are not photographs of the workshops. Inter license: `assets/inter-OFL.txt`. Workshop sources: `map-sources.json`. Review sources: `review-sources.json`.
 
 This snapshot contains the latest revised homepage. Earlier design versions are maintained separately.
+
+Плавная прокрутка: локальная копия Lenis 1.3.17 (MIT), лицензия в `assets/vendor/lenis-LICENSE.txt`. Системная настройка уменьшения движения отключает инерцию и точку курсора.
+
+Галерея под калькулятором: четыре сгенерированных промоизображения (`assets/gallery/`), встроенный image_gen; полные промпты в `gallery-prompts.json`. Лента движется со скоростью 25 px/с, останавливается при наведении, фокусе и системном уменьшении движения. Доступны пауза, стрелки и свайп.

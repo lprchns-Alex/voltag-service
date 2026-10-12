@@ -1,0 +1,18 @@
+/* A stable white header; its footprint never changes while scrolling. */
+html{scroll-padding-top:var(--header-offset,128px)}
+.header{position:sticky;top:0;z-index:60;background:#fff;transition:box-shadow .35s ease}
+.header.is-scrolled{box-shadow:0 1px 0 #2936450d,0 8px 28px #29364506}
+.mobile-nav{background:#fff;max-height:calc(100dvh - var(--header-offset,128px));overflow-y:auto}
+
+/* Native document scrolling keeps sticky positioning and keyboard navigation. */
+html.lenis,html.lenis body{height:auto}
+html.lenis{scroll-behavior:auto!important}
+.lenis:not(.lenis-autoToggle).lenis-stopped{overflow:clip}
+.lenis [data-lenis-prevent],.lenis [data-lenis-prevent-wheel],.lenis [data-lenis-prevent-touch]{overscroll-behavior:contain}
+.lenis.lenis-smooth iframe{pointer-events:none}
+
+.cursor-dot{display:none;position:fixed;top:0;left:0;width:22px;height:22px;border-radius:50%;background:#2475db;opacity:0;pointer-events:none;z-index:100;will-change:transform;transition:opacity .2s ease,width .3s ease,height .3s ease}
+.cursor-dot.is-visible{opacity:.85}
+.cursor-dot.is-hover{width:32px;height:32px;opacity:.55}
+@media(hover:hover) and (pointer:fine){.cursor-dot{display:block}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cursor-dot{display:none}.header{transition:none}}
