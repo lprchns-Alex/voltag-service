@@ -48,14 +48,6 @@
     if (event.pointerType === 'mouse') { hovered = true; updatePlayback(); }
   });
   viewport.addEventListener('pointerleave', () => { hovered = false; updatePlayback(); });
-  viewport.addEventListener('pointerdown', holdForInteraction, { passive: true });
-  addEventListener('pointerup', releaseInteraction, { passive: true });
-  addEventListener('pointercancel', releaseInteraction, { passive: true });
-  viewport.addEventListener('wheel', event => {
-    if (Math.abs(event.deltaX) > Math.abs(event.deltaY) || event.shiftKey) {
-      holdForInteraction(); releaseInteraction();
-    }
-  }, { passive: true });
   section.addEventListener('focusin', () => { focused = true; updatePlayback(); });
   section.addEventListener('focusout', event => {
     focused = section.contains(event.relatedTarget); updatePlayback();
