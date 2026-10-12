@@ -21,3 +21,13 @@
 @media(max-width:860px){.header .header-inner{height:84px;display:flex;justify-content:space-between;gap:18px}.header .desktop-nav{display:none}.header .original-logo{width:66px;height:64px}.header .menu-toggle{display:flex}.header .mobile-nav:not([hidden]){display:block!important}.header .header-actions{gap:12px}}
 @media(max-width:480px){.header{margin-bottom:10px}.header .header-inner{height:78px;gap:12px}.header .brand{width:65px}.header .original-logo{width:61px;height:59px}.header .header-actions{gap:9px}.header .header-book{height:42px;min-height:42px;padding:0 21px;font-size:12px}.header .mobile-nav{left:16px;right:16px;width:auto}}
 @media(prefers-reduced-motion:reduce){.header .desktop-nav a,.header .header-book{transition:none}}
+
+.header-contact{display:flex;flex-direction:column;align-items:center;gap:3px}
+.messengers{display:flex;align-items:center;justify-content:center;gap:8px}
+.messenger-icon{display:grid;place-items:center;width:30px;height:30px;padding:4px;border:0;background:transparent;border-radius:50%;color:#111;cursor:default;transition:background .2s}
+.messenger-icon svg{width:22px;height:22px;fill:currentColor}
+.messenger-icon:disabled{opacity:1;color:#111}
+.messenger-icon:focus-visible{outline:2px solid #24313f;outline-offset:2px}
+.mobile-messengers{justify-content:flex-start;padding:4px 11px 8px}
+@media(max-width:1000px){.header .desktop-nav{gap:14px;font-size:13px}.header .header-inner{gap:16px}}
+@media(max-width:860px){.header-contact{display:none}}
