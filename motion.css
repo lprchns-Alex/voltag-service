@@ -11,8 +11,8 @@ html.lenis{scroll-behavior:auto!important}
 .lenis [data-lenis-prevent],.lenis [data-lenis-prevent-wheel],.lenis [data-lenis-prevent-touch]{overscroll-behavior:contain}
 .lenis.lenis-smooth iframe{pointer-events:none}
 
-.cursor-dot{display:none;position:fixed;top:0;left:0;width:22px;height:22px;border-radius:50%;background:#2475db;opacity:0;pointer-events:none;z-index:100;will-change:transform;transition:opacity .2s ease,width .3s ease,height .3s ease}
-.cursor-dot.is-visible{opacity:.85}
-.cursor-dot.is-hover{width:32px;height:32px;opacity:.55}
+.cursor-dot{display:none;position:fixed;top:0;left:0;width:12px;height:12px;border-radius:50%;background:#17365b;opacity:0;pointer-events:none;z-index:100;will-change:transform;transition:opacity .2s ease,width .3s ease,height .3s ease}
+.cursor-dot.is-visible{opacity:.95}
+.cursor-dot.is-hover{width:18px;height:18px;opacity:.8}
 @media(hover:hover) and (pointer:fine){.cursor-dot{display:block}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cursor-dot{display:none}.header{transition:none}}
