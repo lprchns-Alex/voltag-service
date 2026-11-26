@@ -146,13 +146,27 @@ details[open] > summary::after { content: "−"; }
 .price-item[open] > summary::after { content: ""; background-image: url("assets/price-collapse.svg"); }
 .price-directory > summary::after { margin-left: auto; }
 .price-directory-content { padding: 0 19px 17px; }
-.price-directory-content p { color: var(--muted); font-size: .875rem; }
-.price-directory-content ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 18px; list-style: none; margin: 12px 0 0; padding: 0; }
+.price-tabs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 13px; }
+.price-tab {
+  padding: 6px 11px; min-height: 36px; border: 1px solid var(--line); border-radius: 8px;
+  color: var(--blue); background: var(--pale); cursor: pointer; font-size: .875rem;
+  font-weight: 600; line-height: 1.25; text-align: left;
+}
+.price-tab:hover { border-color: var(--blue); }
+.price-tab[aria-selected="true"] { color: #fff; border-color: var(--blue); background: var(--blue); }
+.price-tab:focus-visible, .price-tab-panel .table-scroll:focus-visible { outline-offset: 2px; }
+.price-tab-panel .table-scroll { max-height: 300px; overflow: auto; padding: 0; border: 1px solid var(--line); border-radius: 9px; }
+.price-tab-panel thead th { position: sticky; top: 0; border-top: 0; box-shadow: 0 1px var(--line); }
+.price-tab-panel .price-table-group { background: #f5f9fc; }
+.price-tab-panel .price-table-notes { margin-top: 8px; color: var(--muted); font-size: .8125rem; }
+.price-tab-panel .price-source { margin-top: 8px; color: var(--muted); font-size: .8125rem; }
+.price-tab-panel .price-source .text-link { font-size: inherit; }
 .table-scroll { overflow-x: auto; padding: 0 19px 15px; }
 .table-scroll table { width: 100%; border-collapse: collapse; font-size: .875rem; text-align: left; }
 .table-scroll th, .table-scroll td { padding: 10px 8px; border-top: 1px solid var(--line); }
 .table-scroll th { background: var(--pale); font-weight: 650; }
 .table-scroll td:not(:first-child) { white-space: nowrap; }
+.price-tab-panel td:last-child { white-space: normal; width: 28%; }
 
 .work-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
 .work-photo { display: block; overflow: hidden; aspect-ratio: 4 / 3; border-radius: var(--radius); }

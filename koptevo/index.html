@@ -7,8 +7,8 @@
   <meta name="robots" content="noindex, nofollow">
   <meta name="description" content="Вольтаж Сервис на Войковской. Диагностика, ремонт и обслуживание легковых автомобилей и коммерческого транспорта на ул. Клары Цеткин, 24, офис 14.">
   <title>Вольтаж Сервис на Войковской — ремонт автомобилей и агрегатов</title>
-  <link rel="stylesheet" href="style.css?v=7">
-  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="style.css?v=8">
+  <script src="app.js?v=2" defer></script>
 </head>
 <body id="top">
   <a class="skip-link" href="#main">К содержанию</a>
@@ -211,16 +211,227 @@
           <details class="price-item price-directory">
             <summary>Прайсы по другим услугам</summary>
             <div class="price-directory-content">
-              <p>Информация о работах и ориентировочных ценах на сайте сети «Вольтаж Сервис».</p>
-              <ul>
-                <li><a class="text-link" href="https://www.astarter.ru/starterrepair.aspx">Ремонт стартеров</a></li>
-                <li><a class="text-link" href="https://www.astarter.ru/repairgenerator.aspx">Ремонт генераторов</a></li>
-                <li><a class="text-link" href="https://www.astarter.ru/remont-rulevyh-reek.aspx">Рулевые рейки</a></li>
-                <li><a class="text-link" href="https://www.astarter.ru/remont-turbin.aspx">Турбины</a></li>
-                <li><a class="text-link" href="https://www.astarter.ru/remont-motorchikov-pechek-(otopitelej).aspx">Моторчики отопителей</a></li>
-                <li><a class="text-link" href="https://www.astarter.ru/uslugi-avtoelektrika.aspx">Автоэлектрика</a></li>
-                <li><a class="text-link" href="https://www.astarter.ru/to-i-remont-avtomobiley.aspx">ТО и ремонт</a></li>
-              </ul>
+              <div class="price-tabs" role="tablist" aria-label="Категории дополнительных услуг">
+                <button class="price-tab" type="button" role="tab" id="rate-tab-starter" aria-controls="rate-panel-starter" aria-selected="true" tabindex="0">Ремонт стартеров</button>
+                <button class="price-tab" type="button" role="tab" id="rate-tab-alternator" aria-controls="rate-panel-alternator" aria-selected="false" tabindex="-1">Ремонт генераторов</button>
+                <button class="price-tab" type="button" role="tab" id="rate-tab-rack" aria-controls="rate-panel-rack" aria-selected="false" tabindex="-1">Рулевые рейки</button>
+                <button class="price-tab" type="button" role="tab" id="rate-tab-turbo" aria-controls="rate-panel-turbo" aria-selected="false" tabindex="-1">Турбины</button>
+                <button class="price-tab" type="button" role="tab" id="rate-tab-blower" aria-controls="rate-panel-blower" aria-selected="false" tabindex="-1">Моторчики отопителей</button>
+                <button class="price-tab" type="button" role="tab" id="rate-tab-electric" aria-controls="rate-panel-electric" aria-selected="false" tabindex="-1">Автоэлектрика</button>
+                <button class="price-tab" type="button" role="tab" id="rate-tab-maintenance" aria-controls="rate-panel-maintenance" aria-selected="false" tabindex="-1">ТО и ремонт</button>
+              </div>
+              <div class="price-tab-panel" role="tabpanel" id="rate-panel-starter" aria-labelledby="rate-tab-starter">
+                <div class="table-scroll" tabindex="0" role="region" aria-label="Прайс: Ремонт стартеров">
+                  <table>
+                    <thead><tr><th scope="col">Работа</th><th scope="col">Стоимость</th></tr></thead>
+                    <tbody>
+                      <tr><th class="price-table-group" scope="rowgroup" colspan="2">Стоимость при ремонте стартеров</th></tr>
+                      <tr><td>Ремонт, замена обгонной муфты (бендикса)</td><td>от 1 600 ₽</td></tr>
+                      <tr><td>Ремонт, замена втягивающего реле</td><td>от 1 200 ₽</td></tr>
+                      <tr><td>Замена щеток</td><td>от 800 ₽</td></tr>
+                      <tr><td>Замена щеточного узла</td><td>от 1 200 ₽</td></tr>
+                      <tr><td>Замена маски, задней крышки стартера</td><td>от 800 ₽</td></tr>
+                      <tr><td>Замена задней крышки стартера</td><td>от 800 ₽</td></tr>
+                      <tr><td>Замена якоря</td><td>от 1 600 ₽</td></tr>
+                      <tr><td>Замена подшипников</td><td>от 1 000 ₽</td></tr>
+                      <tr><td>Замена втулок опорных</td><td>от 500 ₽</td></tr>
+                      <tr><td>Восстановление первоначального вида агрегата (пескоструйные работы, покраска и т.п.)</td><td>от 800 ₽</td></tr>
+                      <tr><td>Диагностика с применением специального стенда</td><td>от 500 ₽</td></tr>
+                    </tbody>
+                    <tbody>
+                      <tr><th class="price-table-group" scope="rowgroup" colspan="2">Полная диагностика с разборкой агрегата</th></tr>
+                      <tr><td>Легковой транспорт</td><td>от 800 ₽*</td></tr>
+                      <tr><td>Грузовой транспорт и спецтехника</td><td>от 1 000 ₽*</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="price-table-notes">*При выполнении ремонта диагностика бесплатна. Стоимость зависит от модели агрегата и комплектующих.</p>
+                <p class="price-source">Ориентировочные цены сети. <a class="text-link" href="https://www.astarter.ru/starterrepair.aspx">Источник цен</a></p>
+              </div>
+              <div class="price-tab-panel" role="tabpanel" id="rate-panel-alternator" aria-labelledby="rate-tab-alternator" hidden>
+                <div class="table-scroll" tabindex="0" role="region" aria-label="Прайс: Ремонт генераторов">
+                  <table>
+                    <thead><tr><th scope="col">Работа</th><th scope="col">Стоимость</th></tr></thead>
+                    <tbody>
+                      <tr><th class="price-table-group" scope="rowgroup" colspan="2">Стоимость при ремонте генераторов</th></tr>
+                      <tr><td>Замена подшипников (переднего и заднего)</td><td>от 1 800 ₽</td></tr>
+                      <tr><td>Замена муфты обгонной</td><td>от 1 900 ₽</td></tr>
+                      <tr><td>Замена или ремонт обмотки статора</td><td>от 1 800 ₽</td></tr>
+                      <tr><td>Замена диодного моста</td><td>от 1 200 ₽</td></tr>
+                      <tr><td>Замена передней или задней маски генератора</td><td>от 800 ₽</td></tr>
+                      <tr><td>Замена коллекторных колец</td><td>от 1 000 ₽</td></tr>
+                      <tr><td>Замена реле регулятора</td><td>от 1 000 ₽</td></tr>
+                      <tr><td>Замена щеток</td><td>от 800 ₽</td></tr>
+                      <tr><td>Замена сальника</td><td>от 800 ₽</td></tr>
+                      <tr><td>Замена шкива</td><td>от 500 ₽</td></tr>
+                      <tr><td>Восстановление первоначального вида агрегата (пескоструйные работы, покраска и т.п.)</td><td>от 800 ₽</td></tr>
+                      <tr><td>Первичная стендовая диагностика</td><td>500 ₽</td></tr>
+                    </tbody>
+                    <tbody>
+                      <tr><th class="price-table-group" scope="rowgroup" colspan="2">Полная диагностика с разборкой агрегата</th></tr>
+                      <tr><td>Легковой транспорт</td><td>800 ₽*</td></tr>
+                      <tr><td>Грузовой транспорт и спецтехника</td><td>1 000 ₽*</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="price-table-notes">*При выполнении ремонта диагностика бесплатна. Стоимость зависит от модели агрегата и комплектующих.</p>
+                <p class="price-source">Ориентировочные цены сети. <a class="text-link" href="https://www.astarter.ru/repairgenerator.aspx">Источник цен</a></p>
+              </div>
+              <div class="price-tab-panel" role="tabpanel" id="rate-panel-rack" aria-labelledby="rate-tab-rack" hidden>
+                <div class="table-scroll" tabindex="0" role="region" aria-label="Прайс: Рулевые рейки">
+                  <table>
+                    <thead><tr><th scope="col">Работа</th><th scope="col">Стоимость</th></tr></thead>
+                    <tbody>
+                      <tr><td>Диагностика гидравлической рулевой рейки</td><td>от 1 500 ₽*</td></tr>
+                      <tr><td>Диагностика электрической рулевой рейки</td><td>от 1 500 ₽*</td></tr>
+                      <tr><td>Снятие и установка рулевой рейки</td><td>от 5 000 ₽</td></tr>
+                      <tr><td>Ремонт гидравлической рулевой рейки</td><td>от 10 000 ₽</td></tr>
+                      <tr><td>Ремонт механической рулевой рейки</td><td>от 8 500 ₽</td></tr>
+                      <tr><td>Ремонт электрической рулевой рейки</td><td>от 20 000 ₽</td></tr>
+                      <tr><td>Замена жидкости ГУР с промывкой системы</td><td>от 3 000 ₽</td></tr>
+                      <tr><td>Замена рулевого наконечника и тяги</td><td>от 1 000 ₽ за сторону</td></tr>
+                      <tr><td>Замена рулевого кардана</td><td>от 3 000 ₽</td></tr>
+                      <tr><td>Компьютерная адаптация электрической рейки</td><td>от 2 500 ₽</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="price-table-notes">*При выполнении ремонта диагностика бесплатна.</p>
+                <p class="price-source">Ориентировочные цены сети. <a class="text-link" href="https://www.astarter.ru/remont-rulevyh-reek.aspx">Источник цен</a></p>
+              </div>
+              <div class="price-tab-panel" role="tabpanel" id="rate-panel-turbo" aria-labelledby="rate-tab-turbo" hidden>
+                <div class="table-scroll" tabindex="0" role="region" aria-label="Прайс: Турбины">
+                  <table>
+                    <thead><tr><th scope="col">Работа</th><th scope="col">Стоимость</th></tr></thead>
+                    <tbody>
+                      <tr><th class="price-table-group" scope="rowgroup" colspan="2">Легковые автомобили · 1 200–3 500 см³</th></tr>
+                      <tr><td>Замена у турбины соплового аппарата (геометрии)</td><td>от 4 000 ₽</td></tr>
+                      <tr><td>Ремонт актуатора турбины</td><td>от 4 500 ₽</td></tr>
+                      <tr><td>Ремонт горячего корпуса турбины</td><td>от 8 000 ₽</td></tr>
+                      <tr><td>Замена ремкомплекта турбины</td><td>от 1 000 ₽</td></tr>
+                      <tr><td>Капитальный ремонт турбины (корпус, ротор, колесо компрессора, ремкомплект)</td><td>от 14 000 ₽</td></tr>
+                    </tbody>
+                    <tbody>
+                      <tr><th class="price-table-group" scope="rowgroup" colspan="2">Легковые автомобили · 3 500–5 000 см³</th></tr>
+                      <tr><td>Замена у турбины соплового аппарата (геометрии)</td><td>от 4 000 ₽</td></tr>
+                      <tr><td>Ремонт актуатора турбины</td><td>от 4 500 ₽</td></tr>
+                      <tr><td>Ремонт горячего корпуса турбины</td><td>от 8 000 ₽</td></tr>
+                      <tr><td>Замена ремкомплекта турбины</td><td>от 10 000 ₽</td></tr>
+                      <tr><td>Капитальный ремонт турбины (корпус, ротор, колесо компрессора, ремкомплект)</td><td>от 15 500 ₽</td></tr>
+                    </tbody>
+                    <tbody>
+                      <tr><th class="price-table-group" scope="rowgroup" colspan="2">Коммерческие автомобили · 3 500–5 000 см³</th></tr>
+                      <tr><td>Замена у турбины соплового аппарата (геометрии)</td><td>от 5 000 ₽</td></tr>
+                      <tr><td>Ремонт актуатора турбины</td><td>от 5 000 ₽</td></tr>
+                      <tr><td>Ремонт горячего корпуса турбины</td><td>от 9 000 ₽</td></tr>
+                      <tr><td>Замена ремкомплекта турбины</td><td>от 11 000 ₽</td></tr>
+                      <tr><td>Капитальный ремонт турбины (корпус, ротор, колесо компрессора, ремкомплект)</td><td>от 16 000 ₽</td></tr>
+                    </tbody>
+                    <tbody>
+                      <tr><th class="price-table-group" scope="rowgroup" colspan="2">Грузовые автомобили и спецтехника · 3 500–5 000 см³</th></tr>
+                      <tr><td>Замена у турбины соплового аппарата (геометрии)</td><td>от 6 500 ₽</td></tr>
+                      <tr><td>Ремонт актуатора турбины</td><td>от 6 500 ₽</td></tr>
+                      <tr><td>Ремонт горячего корпуса турбины</td><td>от 9 000 ₽</td></tr>
+                      <tr><td>Замена ремкомплекта турбины</td><td>от 12 000 ₽</td></tr>
+                      <tr><td>Капитальный ремонт турбины (корпус, ротор, колесо компрессора, ремкомплект)</td><td>от 17 500 ₽</td></tr>
+                    </tbody>
+                    <tbody>
+                      <tr><th class="price-table-group" scope="rowgroup" colspan="2">Грузовые автомобили и спецтехника · 5 000–12 000 см³</th></tr>
+                      <tr><td>Замена у турбины соплового аппарата (геометрии)</td><td>от 6 500 ₽</td></tr>
+                      <tr><td>Ремонт актуатора турбины</td><td>от 6 500 ₽</td></tr>
+                      <tr><td>Ремонт горячего корпуса турбины</td><td>от 9 000 ₽</td></tr>
+                      <tr><td>Замена ремкомплекта турбины</td><td>от 12 000 ₽</td></tr>
+                      <tr><td>Капитальный ремонт турбины (корпус, ротор, колесо компрессора, ремкомплект)</td><td>от 17 500 ₽</td></tr>
+                    </tbody>
+                    <tbody>
+                      <tr><th class="price-table-group" scope="rowgroup" colspan="2">Дополнительные работы и услуги</th></tr>
+                      <tr><td>Диагностика без разборки турбокомпрессора, проверка актуаторов</td><td>Бесплатно</td></tr>
+                      <tr><td>Балансировка картриджа</td><td>от 1 500 ₽</td></tr>
+                      <tr><td>Восстановление резьбовых соединений</td><td>от 500 ₽ за единицу</td></tr>
+                      <tr><td>Настройка сопового аппарата (геометрии)</td><td>от 2 000 ₽</td></tr>
+                      <tr><td>Диагностика с разбором и очисткой турбокомпрессора</td><td>до 2 500 ₽</td></tr>
+                    </tbody>
+                    <tbody>
+                      <tr><th class="price-table-group" scope="rowgroup" colspan="2">Диагностика турбокомпрессора</th></tr>
+                      <tr><td>Диагностика турбокомпрессора без разбора (визуальный осмотр и приблизительная стоимость)</td><td>Бесплатно</td></tr>
+                      <tr><td>Диагностика с полным разбором турбокомпрессора</td><td>от 1 500 ₽*</td></tr>
+                      <tr><td>Балансировка картриджа на стенде</td><td>от 1 500 ₽</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="price-table-notes">*При выполнении ремонта диагностика бесплатна.</p>
+                <p class="price-source">Ориентировочные цены сети. <a class="text-link" href="https://www.astarter.ru/remont-turbin.aspx">Источник цен</a></p>
+              </div>
+              <div class="price-tab-panel" role="tabpanel" id="rate-panel-blower" aria-labelledby="rate-tab-blower" hidden>
+                <div class="table-scroll" tabindex="0" role="region" aria-label="Прайс: Моторчики отопителей">
+                  <table>
+                    <thead><tr><th scope="col">Работа</th><th scope="col">Стоимость</th></tr></thead>
+                    <tbody>
+                      <tr><td>Ремонт моторчиков отопителей легковых авто 12 вольт</td><td>от 3 500 до 6 000 ₽</td></tr>
+                      <tr><td>Ремонт моторчиков отопителей грузовых авто</td><td>от 6 000 до 10 000 ₽</td></tr>
+                      <tr><td>Ремонт моторчиков отопителей спецтехники</td><td>от 6 000 до 10 000 ₽</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="price-source">Ориентировочные цены сети. <a class="text-link" href="https://www.astarter.ru/remont-motorchikov-pechek-(otopitelej).aspx">Источник цен</a></p>
+              </div>
+              <div class="price-tab-panel" role="tabpanel" id="rate-panel-electric" aria-labelledby="rate-tab-electric" hidden>
+                <div class="table-scroll" tabindex="0" role="region" aria-label="Прайс: Автоэлектрика">
+                  <table>
+                    <thead><tr><th scope="col">Работа</th><th scope="col">Стоимость</th></tr></thead>
+                    <tbody>
+                      <tr><td>Диагностика неисправностей</td><td>от 500 ₽</td></tr>
+                      <tr><td>Замена блока предохранителей</td><td>от 1 000 ₽</td></tr>
+                      <tr><td>Ремонт электропроводки (нормо-час)</td><td>1 000 ₽/час</td></tr>
+                      <tr><td>Ремонт (замена) замка зажигания</td><td>от 900 ₽</td></tr>
+                      <tr><td>Замена лампочек (фары, подфарники, задние фонари, салон, щиток приборов)</td><td>от 200 ₽</td></tr>
+                      <tr><td>Замена передних блок-фар</td><td>от 500 ₽</td></tr>
+                      <tr><td>Замена передних блок-фар со снятием переднего бампера</td><td>от 3 500 ₽</td></tr>
+                      <tr><td>Замена задних фонарей</td><td>от 500 ₽</td></tr>
+                      <tr><td>Замена задних фонарей со снятием заднего бампера</td><td>от 3 500 ₽</td></tr>
+                      <tr><td>Ремонт наружного зеркала с подогревом</td><td>от 700 ₽</td></tr>
+                      <tr><td>Ремонт бокового указателя поворотов</td><td>от 400 ₽</td></tr>
+                      <tr><td>Ремонт узла переключателя поворотов</td><td>от 700 ₽</td></tr>
+                      <tr><td>Ремонт (замена) щитка приборов</td><td>от 1 000 ₽</td></tr>
+                      <tr><td>Ремонт (замена) узла переключателя стеклоочистителя</td><td>700 ₽</td></tr>
+                      <tr><td>Установка сигнализации с обратной связью</td><td>от 4 000 ₽</td></tr>
+                      <tr><td>Установка сигнализации с автозапуском</td><td>от 5 000 ₽</td></tr>
+                      <tr><td>Ремонт/замена/установка звукового сигнала</td><td>от 700 ₽</td></tr>
+                      <tr><td>Демонтаж старой сигнализации</td><td>от 1 200 ₽</td></tr>
+                      <tr><td>Ремонт штатной системы центрального замка</td><td>700 ₽</td></tr>
+                      <tr><td>Регулировка света фар</td><td>от 400 ₽</td></tr>
+                      <tr><td>Обновление программного обеспечения</td><td>от 1 000 ₽</td></tr>
+                      <tr><td>Установка парктроников</td><td>от 2 500 ₽</td></tr>
+                      <tr><td>Ремонт/замена блоков управления</td><td>от 3 000 ₽</td></tr>
+                      <tr><td>Замена катушки зажигания</td><td>от 500 ₽</td></tr>
+                      <tr><td>Замена датчика кислорода</td><td>от 2 500 ₽</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="price-source">Ориентировочные цены сети. <a class="text-link" href="https://www.astarter.ru/uslugi-avtoelektrika.aspx">Источник цен</a></p>
+              </div>
+              <div class="price-tab-panel" role="tabpanel" id="rate-panel-maintenance" aria-labelledby="rate-tab-maintenance" hidden>
+                <div class="table-scroll" tabindex="0" role="region" aria-label="Прайс: ТО и ремонт">
+                  <table>
+                    <thead><tr><th scope="col">Работа</th><th scope="col">Стоимость</th></tr></thead>
+                    <tbody>
+                      <tr><td>Диагностика и осмотр неисправностей подвески</td><td>от 800 ₽*</td></tr>
+                      <tr><td>Диагностика неисправностей рулевого механизма</td><td>от 1 000 ₽*</td></tr>
+                      <tr><td>Диагностика неисправностей систем отопления и кондиционирования</td><td>от 1 000 ₽*</td></tr>
+                      <tr><td>Заправка системы кондиционирования хладагентом</td><td>от 3 000 ₽</td></tr>
+                      <tr><td>Ремонт тормозной системы</td><td>от 4 000 ₽</td></tr>
+                      <tr><td>Ремонт подвески автомобиля</td><td>от 2 000 ₽</td></tr>
+                      <tr><td>Ремонт рулевого управления автомобиля</td><td>от 3 000 ₽</td></tr>
+                      <tr><td>Ремонт системы охлаждения и отопления автомобиля</td><td>от 2 500 ₽</td></tr>
+                      <tr><td>Замена элементов системы охлаждения и отопления</td><td>от 3 000 ₽</td></tr>
+                      <tr><td>Замена масла в двигателе, мостах, редукторах</td><td>от 800 ₽</td></tr>
+                      <tr><td>Замена фильтров (масляного, топливного, воздушного, салонного)</td><td>от 500 ₽</td></tr>
+                      <tr><td>Замена тормозной жидкости</td><td>от 800 ₽</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="price-table-notes">*При выполнении ремонта диагностика бесплатна.</p>
+                <p class="price-source">Ориентировочные цены сети. <a class="text-link" href="https://www.astarter.ru/to-i-remont-avtomobiley.aspx">Источник цен</a></p>
+              </div>
             </div>
           </details>
         </div>
