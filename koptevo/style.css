@@ -100,7 +100,7 @@ img { display: block; max-width: 100%; }
 .hero-contact address { display: grid; gap: 9px; font-style: normal; }
 .contact-row { display: flex; align-items: center; gap: 12px; font-size: var(--hero-copy-size); line-height: 1.45; }
 .contact-row svg { width: 22px; height: 22px; flex: 0 0 28px; fill: none; stroke: currentColor; stroke-width: 1.55; stroke-linecap: round; stroke-linejoin: round; }
-.contact-phone { font-size: var(--hero-title-size); font-weight: 650; letter-spacing: -.04em; line-height: 1.13; }
+.contact-phone { font-weight: 650; }
 a.contact-row:hover { text-decoration: underline; text-underline-offset: 4px; }
 .hero-contact :focus-visible { outline-color: #fff; }
 
