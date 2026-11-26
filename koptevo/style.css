@@ -140,11 +140,10 @@ summary::after {
 details[open] > summary::after { content: "−"; }
 .price-value { margin-left: auto; color: var(--blue); white-space: nowrap; font-size: .9375rem; }
 .price-item > summary::after {
-  content: ""; box-sizing: border-box; flex: 0 0 9px; width: 9px; height: 9px;
-  margin: -4px 4px 0 6px; border: solid var(--blue); border-width: 0 2px 2px 0;
-  transform: rotate(45deg); transition: transform .2s;
+  content: ""; flex: 0 0 32px; width: 32px; height: 32px; margin-left: 0;
+  background: url("assets/price-expand.svg") center / contain no-repeat;
 }
-.price-item[open] > summary::after { content: ""; transform: translateY(4px) rotate(225deg); }
+.price-item[open] > summary::after { content: ""; background-image: url("assets/price-collapse.svg"); }
 .price-directory > summary::after { margin-left: auto; }
 .price-directory-content { padding: 0 19px 17px; }
 .price-directory-content p { color: var(--muted); font-size: .875rem; }
