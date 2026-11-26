@@ -144,8 +144,10 @@ details[open] > summary::after { content: "−"; }
   background: url("assets/price-expand.svg") center / contain no-repeat;
 }
 .price-item[open] > summary::after { content: ""; background-image: url("assets/price-collapse.svg"); }
-.price-service > summary::after { margin-left: auto; }
-.price-service > .text-link { margin: 0 19px 17px; }
+.price-directory > summary::after { margin-left: auto; }
+.price-directory-content { padding: 0 19px 17px; }
+.price-directory-content p { color: var(--muted); font-size: .875rem; }
+.price-directory-content ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 18px; list-style: none; margin: 12px 0 0; padding: 0; }
 .table-scroll { overflow-x: auto; padding: 0 19px 15px; }
 .table-scroll table { width: 100%; border-collapse: collapse; font-size: .875rem; text-align: left; }
 .table-scroll th, .table-scroll td { padding: 10px 8px; border-top: 1px solid var(--line); }
